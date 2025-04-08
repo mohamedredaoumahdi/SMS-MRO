@@ -41,13 +41,7 @@ class _ProfilPageState extends State<ProfilPage> {
                     child: SizedBox(
                         height: 46,
                         width: 46,
-                        child: FlatButton(
-                          padding: EdgeInsets.zero,
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(50),
-                            side: BorderSide(color: Colors.white),
-                          ),
-                          color: Color(0xFFF5F6F9),
+                        child: TextButton(
                           onPressed: () {},
                           child:
                               SvgPicture.asset("assets/images/Camera Icon.svg"),
@@ -60,11 +54,7 @@ class _ProfilPageState extends State<ProfilPage> {
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 10),
-            child: FlatButton(
-                padding: EdgeInsets.all(20),
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(15)),
-                color: Color(0xFFF5F6F9),
+            child: TextButton(
                 onPressed: () {},
                 child: Row(children: [
                   SvgPicture.asset(
@@ -89,11 +79,7 @@ class _ProfilPageState extends State<ProfilPage> {
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 10),
-            child: FlatButton(
-                padding: EdgeInsets.all(20),
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(15)),
-                color: Color(0xFFF5F6F9),
+            child: TextButton(
                 onPressed: () {},
                 child: Row(children: [
                   SvgPicture.asset(
@@ -118,11 +104,7 @@ class _ProfilPageState extends State<ProfilPage> {
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 10),
-            child: FlatButton(
-                padding: EdgeInsets.all(20),
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(15)),
-                color: Color(0xFFF5F6F9),
+            child: TextButton(
                 onPressed: () {},
                 child: Row(children: [
                   SvgPicture.asset(
@@ -147,11 +129,7 @@ class _ProfilPageState extends State<ProfilPage> {
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 10),
-            child: FlatButton(
-                padding: EdgeInsets.all(20),
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(15)),
-                color: Color(0xFFF5F6F9),
+            child: TextButton(
                 onPressed: () {},
                 child: Row(children: [
                   Icon(Icons.alternate_email,color:Colors.blue.shade900),
@@ -172,11 +150,7 @@ class _ProfilPageState extends State<ProfilPage> {
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 10),
-            child: FlatButton(
-                padding: EdgeInsets.all(20),
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(15)),
-                color: Color(0xFFF5F6F9),
+            child: TextButton(
                 onPressed: () {},
                 child: Row(children: [
                   Icon(Icons.enhanced_encryption_outlined,color:Colors.blue.shade900),

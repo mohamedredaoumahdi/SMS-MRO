@@ -70,13 +70,13 @@ class _RecievedMessagesPageState extends State<RecievedMessagesPage> {
                         onPressed: () {},
                         child: Icon(Icons.send_rounded),
                         style: ButtonStyle(
-                          shape: WidgetStateProperty.all(CircleBorder()),
+                          shape: MaterialStateProperty.all(CircleBorder()),
                           padding:
-                              WidgetStateProperty.all(EdgeInsets.all(12)),
-                          backgroundColor: WidgetStateProperty.all(
+                              MaterialStateProperty.all(EdgeInsets.all(12)),
+                          backgroundColor: MaterialStateProperty.all(
                               Colors.blue.shade300), // <-- Button color
                           overlayColor:
-                              WidgetStateProperty.resolveWith<Color?>(
+                              MaterialStateProperty.resolveWith<Color?>(
                                   (states) {
                             if (states.contains(WidgetState.pressed))
                               return Colors.blue; // <-- Splash color

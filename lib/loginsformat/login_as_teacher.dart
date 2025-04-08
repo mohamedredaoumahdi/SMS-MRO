@@ -6,7 +6,7 @@ import 'package:school_management_system_01/dashboardTeacher/teachergriddashoard
 import 'package:school_management_system_01/loginsformat/validators.dart';
 import 'package:wc_form_validators/wc_form_validators.dart';
 
-class LoginAsTeacher extends StatefulWidget with EmailAndPasswordValidators {
+class LoginAsTeacher extends StatefulWidget {
   LoginAsTeacher({required this.auth});
   final AuthBase auth;
   @override
@@ -57,8 +57,6 @@ class _LoginAsTeacherState extends State<LoginAsTeacher> {
 
   @override
   Widget build(BuildContext context) {
-    bool submitEnabled = widget.emailValidator.isValid(_email) &&
-        widget.passwordValidator.isValid(_password);
     return Scaffold(
       backgroundColor: Colors.white,
       body: Column(
@@ -122,7 +120,6 @@ class _LoginAsTeacherState extends State<LoginAsTeacher> {
                     textInputAction: TextInputAction.done,
                     controller: _passwordController,
                     onChanged: (password) => _updateState(),
-                    onEditingComplete: submitEnabled ? _submit : null,
                   ),
                   SizedBox(height: 60.0),
                   ElevatedButton(

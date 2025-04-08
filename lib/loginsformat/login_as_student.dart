@@ -9,8 +9,7 @@ import 'package:school_management_system_01/loginsformat/validators.dart';
 import 'package:wc_form_validators/wc_form_validators.dart';
 import 'package:school_management_system_01/dashboardResponsible/dashboard.dart';
 
-class LoginAsStudent extends StatefulWidget
-    with EmailAndPasswordValidators {
+class LoginAsStudent extends StatefulWidget{
   LoginAsStudent({required this.auth});
   final AuthBase auth;
   @override
@@ -60,8 +59,6 @@ class _LoginAsStudentState extends State<LoginAsStudent> {
 
   @override
   Widget build(BuildContext context) {
-    bool submitEnabled = widget.emailValidator.isValid(_email) &&
-        widget.passwordValidator.isValid(_password);
     return Scaffold(
       backgroundColor: Colors.white,
       body: Column(
@@ -121,7 +118,6 @@ class _LoginAsStudentState extends State<LoginAsStudent> {
                     textInputAction: TextInputAction.done,
                     controller: _passwordController,
                     onChanged: (password) => _updateState(),
-                    onEditingComplete: submitEnabled ? _submit : null,
                   ),
                   SizedBox(height: 100.0),
                   ElevatedButton(

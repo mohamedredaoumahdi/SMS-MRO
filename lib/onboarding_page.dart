@@ -1,4 +1,4 @@
-import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_auth/firebase_auth.dart' as AuthProviderPre;
 import 'package:flutter/material.dart';
 import 'package:introduction_screen/introduction_screen.dart';
 import 'package:school_management_system_01/backEnd/services/auth.dart';
@@ -12,7 +12,6 @@ import 'backEnd/services/auth_provider.dart';
 import 'dashBoardStudent/landingStudent.dart';
 import 'dashboardTeacher/landingTeacher.dart';
 import 'main.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 
 class OnBoardingPage extends StatelessWidget {
   
@@ -121,7 +120,6 @@ class OnBoardingPage extends StatelessWidget {
               onChange: (index) => print('Page $index selected'),
               globalBackgroundColor: Theme.of(context).primaryColor,
               isProgressTap: false,
-              skipFlex: 0,
               nextFlex: 0,
               animationDuration: 1000,
             ),
@@ -147,7 +145,7 @@ class OnBoardingPage extends StatelessWidget {
   PageDecoration getPageDecoration() => PageDecoration(
         titleTextStyle: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
         bodyTextStyle: TextStyle(fontSize: 20),
-        descriptionPadding: EdgeInsets.all(0).copyWith(bottom: 0),
+        //descriptionPadding: EdgeInsets.all(0).copyWith(bottom: 0),
         imagePadding: EdgeInsets.all(24),
         pageColor: Colors.white,
         footerPadding: EdgeInsets.symmetric(horizontal: 40.0, vertical: 15.0),

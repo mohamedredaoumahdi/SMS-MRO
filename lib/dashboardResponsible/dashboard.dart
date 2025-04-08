@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:school_management_system_01/dashboardResponsible/gruddashboard2.dart';
+import 'package:school_management_system_01/dashboardResponsible/griddashboard.dart';
 
 class DashboardResponsible extends StatelessWidget {
   //DashboardResponsible({required this.auth});
@@ -73,7 +73,7 @@ class DashboardResponsible extends StatelessWidget {
                     borderRadius:
                         BorderRadius.only(topLeft: Radius.circular(80)),
                     color: Color(0xff232031)),
-                child: Center(child: GridDash())),
+                child: Center(child: GridDashboard())),
           )
         ],
       ),

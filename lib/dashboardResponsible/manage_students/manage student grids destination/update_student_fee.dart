@@ -107,15 +107,15 @@ class _UpdateStudentFeePageState extends State<UpdateStudentFeePage> {
                                       },
                                       child: Icon(Icons.add),
                                       style: ButtonStyle(
-                                        shape: WidgetStateProperty.all(
+                                        shape: MaterialStateProperty.all(
                                             CircleBorder()),
-                                        padding: WidgetStateProperty.all(
+                                        padding: MaterialStateProperty.all(
                                             EdgeInsets.all(12)),
                                         backgroundColor:
-                                            WidgetStateProperty.all(Colors
+                                            MaterialStateProperty.all(Colors
                                                 .blue
                                                 .shade300), // <-- Button color
-                                        overlayColor: WidgetStateProperty
+                                        overlayColor: MaterialStateProperty
                                             .resolveWith<Color?>((states) {
                                           if (states
                                               .contains(WidgetState.pressed))
